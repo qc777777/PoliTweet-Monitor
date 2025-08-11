@@ -16,7 +16,7 @@ load_dotenv()
 
 # ---------- 配置区 ----------
 # 从环境变量获取API密钥，如果没有则使用占位符
-BEARER_TOKEN = os.getenv("TWITTER_BEARER_TOKEN", "your_bearer_token_here")
+BEARER_TOKEN = os.getenv("TWITTER_BEARER_TOKEN")  
 
 # 如果使用占位符，提示用户配置
 if BEARER_TOKEN == "your_bearer_token_here":
