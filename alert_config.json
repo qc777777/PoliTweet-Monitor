@@ -1,0 +1,27 @@
+{
+  "email": {
+    "enabled": false,
+    "smtp_server": "smtp.gmail.com",
+    "smtp_port": 587,
+    "username": "your_email@gmail.com",
+    "password": "your_app_password",
+    "recipients": [
+      "alert1@example.com",
+      "alert2@example.com"
+    ]
+  },
+  "webhook": {
+    "enabled": false,
+    "url": "https://hooks.slack.com/services/YOUR/WEBHOOK/URL",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  },
+  "alert_thresholds": {
+    "red": 70,
+    "orange": 40,
+    "yellow": 20
+  },
+  "cooldown_minutes": 30,
+  "max_alerts_per_hour": 10
+}
